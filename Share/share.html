@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Share</title>
+    <link rel="stylesheet" href="./share.css">
+    <style>
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="name"] {
+            width: 96%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo-div">
+                <a href="/Home/index.html" class="logo-name"><img src="/images/bxniddwcus7orai6swdf.jpeg" alt="logo"
+                        class="logo"></a>
+                <a href="/Home/index.html">smart<br>AgriHub</a>
+            </div>
+            <div class="item-div">
+                <ul class="nav-items">
+                    <li><a href="/Home/index.html">Home</a></li>
+                    <li><a href="/Shop/shop.html">Shop</a></li>
+                    <li><a href="/Crop/crop.html">Crop</a></li>
+                    <li><a href="/Weather/weather.html">Weather</a></li>
+                    <li><a href="/Share/share.html">Share</a></li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section id="auth">
+            <h2>Authentication</h2>
+            <form id="auth-form">
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="password" id="password" placeholder="Password" required>
+                <input type="name" id="name" placeholder="Full Name">
+                <div class="buttons">
+                    <button type="button" id="login-btn" onclick="login()">LogIn</button>
+                    <button type="button" id="register-btn" onclick="register()">Register</button>
+                </div>
+            </form>
+        </section>
+
+    </div>
+
+</body>
+<script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-database.js"></script>
+<script src="./share.js"></script>
+
+</html>

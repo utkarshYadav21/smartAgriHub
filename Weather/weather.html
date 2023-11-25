@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - www.codingnepalweb.com -->
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Weather</title>
+    <link rel="stylesheet" href="./weather.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+    <main class="front">
+        <header>
+            <nav class="navbar">
+                <div class="logo-div">
+                    <a href="/Home/index.html" class="logo-name"><img src="/images/bxniddwcus7orai6swdf.jpeg" alt="logo"
+                        class="logo"></a>
+                <a href="/Home/index.html">smart<br>AgriHub</a>
+            </div>
+            <div class="item-div">
+                <ul class="nav-items">
+                    <li><a href="/Home/index.html">Home</a></li>
+                    <li><a href="/Shop/shop.html">Shop</a></li>
+                    <li><a href="/Crop/crop.html">Crop</a></li>
+                    <li><a href="/Weather/weather.html">Weather</a></li>
+                    <li><a href="/Share/share.html">Share</a></li>
+                    </ul>
+                </div>
+                <div id="google_translate_element"></div>
+            </nav>
+        </header>
+
+        <div class="container">
+            <div class="weather-input">
+                <h3>Enter a City Name</h3>
+                <input class="city-input" type="text" placeholder="E.g., New York, London, Tokyo">
+                <button class="search-btn">Search</button>
+                <div class="separator"></div>
+                <button class="location-btn">Use Current Location</button>
+            </div>
+            <div class="weather-data">
+                <div class="current-weather">
+                    <div class="details">
+                        <h2>_______ ( ______ )</h2>
+                        <h6>Temperature: __°C</h6>
+                        <h6>Wind: __ M/S</h6>
+                        <h6>Humidity: __%</h6>
+                    </div>
+                </div>
+                <div class="days-forecast">
+                    <h2>5-Day Forecast</h2>
+                    <ul class="weather-cards">
+                        <li class="card">
+                            <h3>( ______ )</h3>
+                            <h6>Temp: __C</h6>
+                            <h6>Wind: __ M/S</h6>
+                            <h6>Humidity: __%</h6>
+                        </li>
+                        <li class="card">
+                            <h3>( ______ )</h3>
+                            <h6>Temp: __C</h6>
+                            <h6>Wind: __ M/S</h6>
+                            <h6>Humidity: __%</h6>
+                        </li>
+                        <li class="card">
+                            <h3>( ______ )</h3>
+                            <h6>Temp: __C</h6>
+                            <h6>Wind: __ M/S</h6>
+                            <h6>Humidity: __%</h6>
+                        </li>
+                        <li class="card">
+                            <h3>( ______ )</h3>
+                            <h6>Temp: __C</h6>
+                            <h6>Wind: __ M/S</h6>
+                            <h6>Humidity: __%</h6>
+                        </li>
+                        <li class="card">
+                            <h3>( ______ )</h3>
+                            <h6>Temp: __C</h6>
+                            <h6>Wind: __ M/S</h6>
+                            <h6>Humidity: __%</h6>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+<script src="./weather.js" ></script>
+</html>

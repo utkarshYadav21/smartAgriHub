@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Crop</title>
+    <link rel="stylesheet" type="text/css" href="crop.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo-div">
+                <a href="/Home/index.html" class="logo-name"><img src="/images/bxniddwcus7orai6swdf.jpeg" alt="logo"
+                        class="logo"></a>
+                <a href="/Home/index.html">smart<br>AgriHub</a>
+            </div>
+            <div class="item-div">
+                <ul class="nav-items">
+                    <li><a href="/Home/index.html">Home</a></li>
+                    <li><a href="/Shop/shop.html">Shop</a></li>
+                    <li><a href="/Crop/crop.html">Crop</a></li>
+                    <li><a href="/Weather/weather.html">Weather</a></li>
+                    <li><a href="/Share/share.html">Share</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="main-cont">
+        <div class="container">
+            <h1>Crop Recommendation Tool</h1>
+            <form id="crop-form">
+                <label for="nitrogen">Nitrogen Level:</label>
+                <input type="text" id="nitrogen" name="nitrogen" ><br>
+                
+                <label for="phosphorus">Phosphorus Level:</label>
+                <input type="text" id="phosphorus" name="phosphorus" ><br>
+                
+                <label for="potassium">Potassium Level:</label>
+                <input type="text" id="potassium" name="potassium" ><br>
+                
+                <label for="temperature">Temperature:</label>
+                <input type="text" id="temperature" name="temperature" ><br>
+                
+                <label for="ph">pH Level:</label>
+                <input type="text" id="ph" name="ph" step="0.1" ><br>
+                
+                <label for="rainfall">Rainfall (in mm/year):</label>
+                <input type="text" id="rainfall" name="rainfall" ><br>
+                
+                <label for="humidity">Humidity (%):</label>
+                <input type="text" id="humidity" name="humidity" ><br>
+
+                <button type="button" id="recommend-button" onclick="getCrop()">Get Crop Recommendations</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="./crop.js"></script>
+
+</body>
+
+</html>
+

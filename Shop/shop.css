@@ -1,0 +1,172 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+.front{
+    height: 135vh;
+    width: 100%;
+    background-image: url("/images/shutterstock_700890880.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar {
+    height: 11%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.nav-colored { background-color:#000; }
+
+.logo-div {
+    display: flex;
+    align-items: center;
+    width: 49%;
+}
+
+.logo-div a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.logo {
+    height: 63px;
+    padding-left: 45px;
+    padding-top: 3px;
+    padding-right: 8px;
+}
+
+.item-div {
+    width: 41%;
+}
+
+.nav-items {
+    list-style: none;
+    display: flex;
+}
+
+.nav-items li {
+    padding: 5px 30px;
+    font-size: 18px;
+}
+
+.nav-items li:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+.nav-items a {
+    text-decoration: none;
+    color: #fff;
+}
+.scrolled {
+    background-color: black;
+}
+.hidden {
+    display: none;
+}
+.popup.active .content {
+    transition: all .3s ease-in-out;
+    transform: translate(-50%,-50%) scale(1);
+}
+h2{
+    margin-bottom: 25px;
+}
+.img-option{
+    margin-left: 58px;
+}
+.popup .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    background: #fff;
+    height: fit-content;
+    max-width: 500px;
+    z-index: 999;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 2px solid black;
+}
+.popup.active .overlay {
+    display: block;
+}
+.popup .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,.7);
+    z-index: 3;
+    display: none;
+}
+.close-modal-1 {
+    position: absolute;
+    top: 10px;
+    right: 7px;
+    margin-top: 1%;
+    margin-right: 1.9%;
+    height: 28px;
+    width: 28px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border-radius: 18px;
+}
+.close-modal-2 {
+    position: absolute;
+    top: 10px;
+    right: 7px;
+    margin-top: 1%;
+    margin-right: 1.9%;
+    height: 28px;
+    width: 28px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border-radius: 18px;
+}
+
+.box{
+    height: 335px;
+    width: 335px;
+    border: 2px solid black ;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 330px;
+    margin-top: 20px;
+}
+.tools {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 70px;
+
+}
+.crop {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.shopping{
+    font-size:1.5rem;
+}
+h3{
+    margin-top: 20px;
+}
+
+.shop-img{
+    margin-top: 15px;
+    height: 210px;
+    width: 255px;
+    border-radius: 150px;
+}

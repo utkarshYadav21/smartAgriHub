@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Share</title>
+    <link rel="stylesheet" href="/Share/dist/messages.css">
+    <style>
+        form {
+            margin-top: 7px;
+        }
+
+        .ms {
+            display: flex;
+            align-items: center;
+            margin-top: 5px;
+        }
+
+        label {
+            min-width: 100px;
+
+        }
+
+        #heading {
+            flex: 1;
+            height: 50px;
+            resize: vertical;
+        }
+
+        #msg {
+            flex: 1;
+            height: 200px;
+            resize: vertical;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="front">
+        <header>
+            <nav class="navbar">
+                <div class="logo-div">
+                    <a href="/Home/index.html" class="logo-name"><img src="/images/bxniddwcus7orai6swdf.jpeg" alt="logo"
+                            class="logo"></a>
+                    <a href="/Home/index.html">smart<br>AgriHub</a>
+                </div>
+                <div class="item-div">
+                    <ul class="nav-items">
+                        <li><a href="/Home/index.html">Home</a></li>
+                        <li><a href="/Shop/shop.html">Shop</a></li>
+                        <li><a href="/Crop/crop.html">Crop</a></li>
+                        <li><a href="/Weather/weather.html">Weather</a></li>
+                        <li><a href="/Share/share.html">Share</a></li>
+
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main>
+
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512" class="plus"
+                    onclick="togglePopup()">
+                    <style>
+                        svg {
+                            fill: rgb(183, 131, 17)
+                        }
+                    </style>
+                    <path
+                        d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM232 344V280H168c-13.3 0-24-10.7-24-24s10.7-24 24-24h64V168c0-13.3 10.7-24 24-24s24 10.7 24 24v64h64c13.3 0 24 10.7 24 24s-10.7 24-24 24H280v64c0 13.3-10.7 24-24 24s-24-10.7-24-24z" />
+                </svg>
+            </div>
+            <div class="popup active" id="popup-1">
+                <div class="overlay"></div>
+                <div class="content">
+                    <div class="close-btn" onclick="togglePopup()">×</div>
+                    <h3>Share Anything</h3>
+                    <form method="POST" id="sharing" class="add">
+                        <div class="ms">
+                            <label for="name">Heading:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                            <textarea id="heading" name="heading"></textarea><br><br>
+                        </div>
+                        <div class="ms">
+                            <label for="msg">Message:&nbsp;&nbsp;&nbsp;</label>
+                            <textarea id="msg" name="msg"></textarea><br><br><br>
+                        </div>
+                        <button id="submit">Send</button>
+                    </form>
+
+                </div>
+            </div>
+        </main>
+        <main class="sharing-platform">
+            <h1 style="text-align: center; font-size: 40px;">Sharing Platform</h1>
+            <div id="articleList" class="">
+                <ul class="discussion-list">
+                    <li>
+                        <h3>Drought-Resistant Crops</h3>
+                        <p class="answer">In regions with water shortages, like the one I farm in, selecting
+                            drought-resistant crops is pivotal for success. I've transitioned to growing heirloom
+                            varieties
+                            of tomatoes and peppers, and the results have been nothing short of impressive. These
+                            heirloom
+                            varieties have adapted to arid conditions over time, making them resilient to water
+                            scarcity.
+                            They not only require less water but also produce bountiful harvests, allowing me to
+                            conserve
+                            precious water resources without compromising the quality of my produce. I've also noticed
+                            that
+                            these crops tend to have richer flavors and unique characteristics, making them stand out in
+                            the
+                            market. Choosing drought-resistant crops has been a strategic move that aligns with
+                            sustainability and the responsible use of water resources.</p>
+                        <div class="division">
+
+                            <p class="posted-on">Posted On - <span id="grey">02/07/2023 3:20 PM</span></p>
+                            <p class="posted-by">Posted By - Deepa Singh
+                            </p>
+                        </div>
+
+                    </li>
+                    <li>
+                        <h3>Crop Rotation for Improved Yields</h3>
+                        <p class="answer">Crop rotation is a fundamental agricultural practice for maintaining soil
+                            health
+                            and optimizing crop yields. In my farming experience, I've witnessed the remarkable benefits
+                            of
+                            a well-planned crop rotation system. A three-year rotation of corn, soybeans, and wheat has
+                            proven to be highly effective. By alternating these crops, we not only disrupt the life
+                            cycles
+                            of pests and diseases that target specific crops, but we also enhance soil fertility. Corn
+                            is a
+                            heavy nitrogen feeder, while soybeans fix nitrogen in the soil, and wheat complements the
+                            rotation by breaking disease cycles. This diversity ensures that the soil remains
+                            nutrient-rich
+                            and less susceptible to depletion. Over the years, I've observed healthier plants and
+                            improved
+                            yields as a result of this approach. Crop rotation is a simple yet powerful strategy that
+                            can
+                            work wonders for any farm, promoting sustainability and long-term soil health.</p>
+                        <div class="division">
+                            <p class="posted-on">Posted On - <span id="grey">15/03/2023 10:30 AM</span></p>
+                            <p class="posted-by">Posted By - Rajesh Kumar</p>
+                        </div>
+                    </li>
+                    <li>
+                        <h3>Power Weeder</h3>
+                        <p class="answer"> The Power Weeder used to eliminate weeds in vegetable gardens, Vineyard
+                            plantations, and basins of orchard trees. Power weeders are slightly getting popular among
+                            the
+                            farmers for their ease in farming activity. It comes with diesel engines with them. For
+                            power
+                            weeders, there are a variety of attachments present in the market. It is a multipurpose
+                            machine.
+                        </p>
+                        <div class="division">
+                            <p class="posted-on">Posted On - <span id="grey">25/8/2023 10:07 PM</span></p>
+                            <p class="posted-by">Posted By - Aman Prajapati</p>
+                        </div>
+                    </li>
+                    <li>
+                        <h3>Improving Soil Quality</h3>
+                        <p class="answer"> Enhancing soil quality is at the core of successful farming, and one
+                            technique
+                            that has had a profound impact on my garden is the use of homemade compost. Compost is a
+                            cost-effective and eco-friendly method to enrich the soil with essential nutrients and
+                            improve
+                            its overall structure. By recycling organic materials such as kitchen scraps, yard waste,
+                            and
+                            coffee grounds, I've transformed my garden soil into a nutrient-rich powerhouse. The impact
+                            has
+                            been undeniable—my plants are healthier, more resilient to pests and diseases, and I've
+                            observed
+                            significant improvements in crop yields. Moreover, the enriched soil retains moisture
+                            better,
+                            reducing the need for frequent watering. I encourage fellow farmers to embrace composting as
+                            a
+                            simple yet highly effective soil improvement technique that supports sustainable
+                            agriculture.
+                        </p>
+                        <div class="division">
+                            <p class="posted-on">Posted On - <span id="grey">18/08/2023 11:00 AM</span></p>
+                            <p class="posted-by">Posted By - Ravi Verma</p>
+                        </div>
+                    </li>
+                    <li>
+                        <h3>Natural Pest Control</h3>
+                        <p class="answer"> Here's a valuable tip for natural pest control that has been a game-changer
+                            for my vegetable garden. Planting marigolds alongside your veggies not only adds a burst of
+                            color to your garden but also serves as an incredible natural pest deterrent. Marigolds emit
+                            compounds that repel a wide range of garden pests, including aphids and nematodes. Their
+                            vibrant presence not only reduces the need for chemical pesticides but also contributes to
+                            the overall health of your garden. I've noticed a substantial decrease in the number of
+                            pests damaging my crops, which has translated into healthier and more robust harvests. The
+                            beauty of this method is that it's not only environmentally friendly but also aesthetically
+                            pleasing.
+                        </p>
+                        <div class="division">
+                            <p class="posted-on">Posted On - <span id="grey">20/05/2023 2:15 PM</span></p>
+                            <p class="posted-by">Posted By - Priya Patel</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </main>
+    </main>
+</body>
+<script type="module" src="./bundle.js"></script>
+<script>
+    function togglePopup() {
+        document.getElementById("popup-1").classList.toggle("active");
+    }
+    // window.addEventListener("scroll", function () {
+    //     const navbar = document.querySelector(".navbar");
+    //     if (window.scrollY > 5) {
+    //         navbar.classList.add("scrolled");
+    //     } else {
+    //         navbar.classList.remove("scrolled");
+    //     }
+    // });
+</script>
+
+</html>

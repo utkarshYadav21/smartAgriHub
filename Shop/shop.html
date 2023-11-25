@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="./shop.css">
+
+</head>
+
+<body>
+    <section class="front   ">
+        <header>
+            <nav class="navbar">
+                <div class="logo-div">
+                    <a href="/Home/index.html" class="logo-name"><img src="/images/bxniddwcus7orai6swdf.jpeg" alt="logo"
+                            class="logo"></a>
+                    <a href="/Home/index.html">smart<br>AgriHub</a>
+                </div>
+                <div class="item-div">
+                    <ul class="nav-items">
+                        <li><a href="/Home/index.html">Home</a></li>
+                        <li><a href="/Shop/shop.html">Shop</a></li>
+                        <li><a href="/Crop/crop.html">Crop</a></li>
+                        <li><a href="/Weather/weather.html">Weather</a></li>
+                        <li><a href="/Share/share.html">Share</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main class="shopping">
+            <div class="container-shop"></div>
+            <div class="tools">
+                <div class="box">
+                    <h3>Buy Tools</h3>
+                    <a href="./buy-tools.html"><img src="/images/Rotary_Mulcher.jpg" alt="tool" class="shop-img"></a>
+                </div>
+                <div class="box" id="sell-tools">
+                    <h3>Sell Tools</h3>
+                    <img src="/images/images.jpeg" alt="tool" class="shop-img">
+                </div>
+            </div>
+            <div class="crop">
+                <div class="box">
+                    <h3>Buy Crops</h3>
+                    <a href="./buy-crop.html"><img src="/images/How-to-buy-a-farm.jpeg" alt="crop" class="shop-img"></a>
+                </div>
+                <div class="box" id="sell-crops">
+                    <h3>Sell Crops</h3>
+                    <img src="/images/image-10-1024x536.png" alt="crop" class="shop-img">
+                </div>
+            </div>
+        </main>
+    </section>
+    <div class="popup active hidden" id="popup-1">
+        <div class="overlay">
+            <div class="content">
+                <button class="close-modal-1">&times;</button>
+                <h2>Add a tool to sell</h2>
+                <form id="addToolForm">
+                    <label for="name">Tool Name<span
+                            class="req">*</span>:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    <input type="text" id="name" name="name"><br><br>
+                    <p class="error" id="nameErr"></p>
+
+                    <label for="email">Mobile No<span
+                            class="req">*</span>:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    <input type="text" id="email" name="email" ><br><br>
+                    <p class="error" id="mailErr"></p>
+
+                    <label for="price">Price<span
+                            class="req">*</span>:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    <input type="text" id="priceTool" name="price" ><br><br>
+                    <p class="error " id="priceErr"></p>
+
+                    <label for="brand">Brand<span
+                            class="req">*</span>:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    <input type="text" id="brand" name="brand"><br><br>
+                    <p class="error" id="brandErr"></p>
+                    <label for="material">Buying date<span
+                            class="req">*</span>:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    <input type="text" id="datepicker"><br><br><br>
+                    <p class="error" id="materialErr"></p>
+
+                    <label for="img" class="img-option">Select image<span class="req">*</span>:</label>&nbsp;&nbsp;
+                    <input type="file" id="imgTool" name="img" accept="image/*">
+                    <br><br><br>
+                    <input class="submit-btn" type="button" value="Submit" onclick="addTool()" aria-label="aadd-tool">
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="popup active hidden" id="popup-2">
+        <div class="overlay">
+            <div class="content">
+                <button class="close-modal-2">&times;</button>
+                <h2>Add Crop to sell</h2>
+                <form id="addCropForm">
+                    <label for="name">Crop Name<span
+                            class="req">*</span>:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    <input type="text" id="nameCrop" name="name"><br><br>
+                    <p class="error" id="nameErrCrop"></p>
+
+                    <label for="email">Mobile No<span
+                            class="req">*</span>:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    <input type="text" id="emailCrop" name="email"><br><br>
+                    <p class="error" id="mailErrCrop"></p>
+
+                    <label for="tool">Quantity in quintol<span class="req">*</span>:&nbsp;</label>
+                    <input type="text" id="toolCrop" name="tool"><br><br>
+                    <p class="error" id="toolErrCrop"></p>
+
+                    <label for="brand">Price per quintol<span class="req">*</span>:&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    <input type="text" id="brandCrop" name="brand"><br><br>
+                    <p class="error" id="brandErrCrop"></p>
+                    <label for="img" class="img-option">Select image<span class="req">*</span>:</label>&nbsp;&nbsp;
+                    <input type="file" id="imgCrop" name="img" accept="image/*">
+                    <br><br><br>
+                    <input type="button" value="Submit" onclick="addCrop()" aria-label="add-crop">
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="./shop.js"></script>
+</body>
+
+</html>
