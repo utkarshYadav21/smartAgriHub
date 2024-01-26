@@ -1,12 +1,7 @@
 import { initializeApp } from "firebase/app";
 import { getFirestore, collection, getDocs, addDoc } from "firebase/firestore";
 const firebaseConfig = {
-  apiKey: "AIzaSyAA5q4c4eIf5gVAxc3v45yznnM-gWz0H3Y",
-  authDomain: "smartagrihub-a1ccf.firebaseapp.com",
-  projectId: "smartagrihub-a1ccf",
-  storageBucket: "smartagrihub-a1ccf.appspot.com",
-  messagingSenderId: "901356397354",
-  appId: "1:901356397354:web:2205beb55e8f880d6c7453",
+  //PUT YOUR FIREBASE CONFIGURATION HERE
 };
 initializeApp(firebaseConfig);
 const db = getFirestore();
