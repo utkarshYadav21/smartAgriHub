@@ -4,7 +4,7 @@ const locationButton = document.querySelector(".location-btn");
 const currentWeatherDiv = document.querySelector(".current-weather");
 const weatherCardsDiv = document.querySelector(".weather-cards");
 
-const API_KEY = "384a7d67e9e69e518960e273bb8a0f48";
+const API_KEY = "ENTER YOUR API KEY";
 
 // window.addEventListener('scroll', function () {
 //     const navbar = document.querySelector('.navbar');
