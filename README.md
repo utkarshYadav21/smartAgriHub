@@ -29,7 +29,7 @@ SmartAgriHub is a comprehensive web application designed to assist farmers in va
 ## Installation
 
 # Clone the repository
-git clone https://github.com/your-username/smartAgriHub.git
+git clone https://github.com/utkarshYadav21/smartAgriHub.git
 
 # Navigate to the project directory
 cd smartAgriHub
