@@ -23,7 +23,7 @@ SmartAgriHub is a comprehensive web application designed to assist farmers in va
 
 ## Technologies Used
 
-- React
+- HTML, CSS, Javascript, Firebase 
 - Machine Learning Model 
 
 ## Installation
